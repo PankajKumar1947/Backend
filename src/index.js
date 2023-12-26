@@ -1,29 +1,22 @@
+//second approach to connect mongodb
+
 //require('dotenv').config({path:'./env'})
 import dotenv from "dotenv"
 import connectDB from "./db/index.js";
 
-
+//necessary for running the code import dotenv from "dotenv"
 dotenv.config({
     path:'./env'
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 connectDB()
 
+
 /*
-First approach
+//First approach
+import mongoose from "mongoose";
+import { DB_NAME } from "./constants.js";
+
 import express from "express"
 const app=express();
 
@@ -45,5 +38,3 @@ const app=express();
     }
 })()
 */
-
-/* second approach*/
